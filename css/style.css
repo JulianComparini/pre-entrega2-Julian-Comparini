@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden !important;
+
+}
+
+.mensaje-whatsapp{
+    background-color: #17376e;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.mensaje-whatsapp a{
+    color: #27d467;   
+}
+
+main{
+
+display: grid;
+place-items: center;
+}
+
+.main-img{
+    margin-top: 5rem;
+    display: flex;
+    gap: 20px; 
+    max-width: 100%;
+}
+
+.main-img img{
+    
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.nav-container{
+    position: relative;
+}
+
+.nav-container span{
+    position: absolute;
+    border-bottom: 2px solid #222526;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar li a{
+    color: #222526;
+}
+
+.navbar li a:hover{
+    color: red;
+}
+
+nav{
+    background-color: #222526;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.contacto a{
+    text-decoration: none;
+}
+
+.contacto h3{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #27d467;
+}
+
+.contacto p{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.cuenta{
+    margin-top: 47px;
+}
+
+.navbar{
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: .9375rem;
+    
+}
+
+.navbar li:hover .submenu{
+display: block;
+}
+
+.navbar li{
+    position: relative;
+    display: inline-block;
+}
+
+.navbar a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.navsup{
+    display: flex;
+    justify-content: center;
+}
+
+
+.submenu{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 20px; 
+}
+
+.busqueda{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.barra-de-busqueda{
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 35px;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+footer{
+    background-color: #222526;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    margin-top: 5%;
+    color: #fff;
+    
+    height: 350px;
+    padding: 20px;
+}
+
+footer .footer-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-enlaces h4{
+    font-size: 1.5rem;
+}
+
+.footer-enlaces ul li{
+    
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.footer-enlaces ul li a{
+    
+    list-style: none;
+    color: #fdfdfd;
+}
+
+.footer-enlaces ul li:hover{
+    
+    color: red;
+    cursor: pointer;
+}
+
+.footer-enlaces ul li a:hover{
+    color: red;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    }   
+
+.numero-wsp span{
+    color: #fff;
+}
+
+.footer-whatsapp{
+    margin-top: 5%;
+}
+
+.footer-whatsapp img{
+    width: 20px;
+    margin-left: 5px;
+    line-height: 20px;
+    height: 20px;
+}
+
+.footer-whatsapp a{
+    list-style: none;
+    color: #fdfdfd;
+    font-size: 20px;
+    line-height: 20px;
+    
+}
+
+
+.main-form{ 
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #fdfdfd;
+    height: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form h3{
+    font-size: 1.5rem;
+}
+
+form label{
+    margin-top: 5%;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+form input{
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+
+}
+
+form .button{
+    padding: 5px;
+    margin-top: 5%;
+}
+
+form .button:hover{
+    padding: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px){
+    .main-img{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar{
+        font-size: .5375rem;
+        
+    }
+
+    .navbar a{
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+    }
+
+    .contacto h3{
+        font-size: 14px;
+    }
+
+    .contacto span{
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 865px){
+
+    .busqueda{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .navbar{
+        font-size: .5075rem;
+        
+    }
+
+    .navbar a{
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+    }
+
+}
+
+
+@media (max-width: 568px) {
+
+    .barra-de-busqueda{
+    width: 100%;
+    margin-right: 0;
+    }
+
+    .cuenta{
+    margin-bottom: 5%;
+    }
+
+    .nav-container{
+    margin-top: 5%;
+    }
+
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+    }
+
+    .main-img{
+    flex-direction: column;
+    }
+
+.main-img img{
+    max-width: 100%;
+}
+
+    footer{
+    margin-top: 5%;
+    padding: 5%;
+    }
+
+    .contacto-footer div{
+    color: #fff;
+    }
+
+    .footer-container{
+    flex-direction: column;
+    }
+
+    .footer-enlaces{
+    margin-top: 5%;
+    }
+
+
+   /* estilos form responsive */
+    .main-form{
+    flex-direction: column;
+    } 
+}
+
+@media (max-width: 375px){
+    .barra-de-busqueda{
+        width: 250px;
+    }
+}
